@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    height:1000px
+}
+header {
+    background-color: #eee;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 150px 0 150px ;
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+    scale: 200%;
+
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.social-icons a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-left: 20px;
+}
+section {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: white;
+    box-shadow: 0px 4px 10px 1px #e0e0e0;
+    overflow: scroll;
+    
+}
+.nav::-webkit-scrollbar {
+    display: none;
+}
+.nav a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 10px;
+    color: black;
+    padding:10px;
+}
+
+.stickers {
+    padding: 100px;
+    background-color: white;
+}
+.stickers h1 {
+    font-size: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: white;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    margin: 30px;
+}
+.card-image img{
+    width: 100%;
+    transition: ease 0.3s;
+}
+.card-image img:hover{
+    transform: scale(1.1);
+}
+.card-info {
+    padding-left: 1em;
+    
+}
+
+.card-name {
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+.order-div {
+    background-color: white;
+    border: solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    left: 100px;
+    
+}
+.order-div:hover {
+    background-color: #e0e0e0;
+}
+.order {
+    font-size: 15px;
+    font-weight: 100;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.contact {
+    width: 100%;
+    height: auto;
+
+}
+.contact h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: center;
+}
+.contact-card {
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    height: auto;
+
+}
+.contact-card img {
+    width:50%;
+
+}
+footer {
+    width: 100%;
+    background-color: #19124f;
+    display: flex;  
+    justify-content: space-between;
+}
+footer p {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    padding: 12px;
+}
+footer a {
+    color:blueviolet ;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.dm-us {
+    width: 100%;
+    background-color: #19124f;
+    height: auto;
+    
+}
+
+.dm-us > h1 {
+    text-align: center;
+    color :white;
+    font-size:40px;
+    padding-top: 20px;
+}
+.dm-us-social {
+    display :flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+}
+
+.dm-us-social a {
+    font-size: 200px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+
+    @media (min-width:1000px) {
+        .nav {
+        flex-wrap: wrap;
+        overflow: scroll;
+    }
+}
+
+
+@media (min-width:300px) and (max-width:450px) {
+    body {
+        font-size: 0.8em;
+    }
+    header {
+        padding: 10px;
+    }
+    .logo {
+        padding-left: 10px;
+    }
+    .stickers {
+        padding: 0;
+    }
+    .content {
+        
+    }
+    .stickers h1 {
+        font-size: 2.8em;
+        padding-left: 20px;
+    }
+.logo img {
+    scale: 150%;
+    width: ;
+}
+footer p {
+    font-size: 1em;
+}
+.social-icons a{
+    font-size: 1.8em;
+}
+    .dm-us-social a{
+        font-size: 40px;
+    }
+    .dm-us h1{
+    font-size:20px;
+        
+    }
+}
